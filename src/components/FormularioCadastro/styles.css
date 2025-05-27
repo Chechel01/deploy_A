@@ -1,0 +1,117 @@
+/* Container principal */
+.container {
+    background: #FFFFFF;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 380px; /* Melhor controle de largura */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin: 0 auto; /* Alinhar ao centro */
+}
+
+/* Imagem do logo */
+.container img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+/* Título */
+h2 {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    color: #004080; /* Azul Bahia */
+    margin-bottom: 20px; /* Distância do título para o formulário */
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+/* Estilo dos inputs e botões */
+input,
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Estilo dos inputs */
+input {
+    border: 1px solid #ccc;
+    transition: border 0.3s ease;
+}
+
+/* Estilo dos inputs em foco */
+input:focus {
+    border-color: #004080;
+    outline: none;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #004080; /* Azul Bahia */
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #004080;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #E30613; /* Vermelho Bahia */
+    border-color: #E30613;
+}
+
+/* Efeito focus no botão */
+button:focus {
+    outline: 3px solid #E30613; /* Para melhorar a acessibilidade */
+}
+
+/* Link para ver usuários */
+.link-usuarios {
+    margin-top: 25px;
+    text-decoration: none;
+    color: #004080; /* Azul Bahia */
+    font-size: 14px;
+}
+
+/* Efeito hover no link */
+.link-usuarios:hover {
+    text-decoration: underline;
+    color: #E30613; /* Vermelho Bahia */
+}
+
+/* Estilo para telas pequenas */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 15px; /* Ajuste no padding para telas menores */
+    }
+
+    h2 {
+        font-size: 18px; /* Ajuste no tamanho do título */
+    }
+
+    input,
+    button {
+        font-size: 16px; /* Tamanho maior para facilitar a leitura */
+    }
+
+    .container img {
+        width: 150px; /* Ajuste no tamanho do logo */
+    }
+}

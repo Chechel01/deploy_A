@@ -1,0 +1,61 @@
+/* Estilos para os itens da lista */
+.lista-usuarios li {
+  text-align: left;
+  margin-bottom: 15px; /* Aumentando o espaçamento entre os itens */
+  padding: 15px; /* Aumentando o padding para um visual mais espaçoso */
+  background-color: #004080; /* Azul Bahia */
+  border-radius: 8px; /* Borda mais arredondada */
+  font-size: 16px;
+  color: #FFFFFF; /* Texto branco */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adicionando sombra para destacar mais */
+  transition: transform 0.3s ease; /* Efeito de transição suave */
+}
+
+.lista-usuarios li:hover {
+  transform: scale(1.03); /* Leve aumento do tamanho ao passar o mouse */
+  background-color: #ec888f; /* Mudando para Vermelho Bahia no hover */
+}
+
+.lista-usuarios li strong {
+  font-weight: bold;
+  color: #E30613; /* Vermelho Bahia */
+}
+
+.lista-usuarios li span {
+  color: #ccc; /* Cor mais clara para os valores (ajustando contraste) */
+}
+
+/* Estilo de lista vazia, sem usuários */
+.sem-usuarios {
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+  font-style: italic; /* Adicionando itálico para a mensagem de "nenhum usuário encontrado" */
+}
+
+/* Estilo de erro, se houver algum problema na busca */
+.erro {
+  background-color: #FFCDD2;
+  color: #D32F2F;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 480px) {
+  .lista-usuarios li {
+    font-size: 14px; /* Reduzindo o tamanho da fonte em dispositivos móveis */
+    padding: 12px; /* Ajustando o padding */
+  }
+
+  .lista-usuarios li strong {
+    font-size: 15px; /* Ajustando o tamanho da fonte para negrito */
+  }
+
+  .sem-usuarios {
+    font-size: 14px; /* Ajustando o tamanho da fonte da mensagem de sem usuários */
+  }
+}

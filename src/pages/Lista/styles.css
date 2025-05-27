@@ -1,0 +1,87 @@
+/* src/pages/Lista/styles.css */
+
+.pagina-lista-usuarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 32px;
+    background-color: #f4f4f4;
+}
+  
+.pagina-lista-usuarios .container {
+    background-color: white;
+    padding: 32px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Estilos para o título */
+.pagina-lista-usuarios .container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #284ea7; /* Cor azul para o título */
+    font-weight: 700;
+}
+
+/* Estilo para o link de voltar, agora como botão */
+.pagina-lista-usuarios .container .link-voltar {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff; /* Fundo branco e texto branco */
+    background-color: #004080; /* Azul Bahia */
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Hover do link de voltar, transformando em um botão */
+.pagina-lista-usuarios .container .link-voltar:hover {
+    background-color: #e30613; /* Vermelho Bahia */
+    text-decoration: none;
+}
+
+/* Estilo para a lista de usuários */
+.lista-usuarios {
+    padding: 0;
+    list-style: none;
+}
+
+.lista-usuarios li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .pagina-lista-usuarios .container {
+        padding: 16px;
+        max-width: 90%;
+    }
+
+    .pagina-lista-usuarios .container h2 {
+        font-size: 28px; /* Menor tamanho para telas menores */
+    }
+
+    .pagina-lista-usuarios .container .link-voltar {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

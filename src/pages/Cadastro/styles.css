@@ -1,0 +1,38 @@
+/* src/pages/Cadastro/styles.css */
+
+.pagina-cadastro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 32px;
+  background-color: #f4f4f4; 
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Adicionando um limite máximo de largura e ajustando padding */
+.pagina-cadastro > .container {
+  max-width: 500px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 12px;
+  background-color: #ffffff; /* Branco para o formulário */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease; /* Transição suave */
+}
+
+/* Mudança sutil de sombra ao passar o mouse sobre o formulário */
+.pagina-cadastro > .container:hover {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Para telas pequenas, podemos ajustar o padding */
+@media (max-width: 768px) {
+  .pagina-cadastro {
+      padding: 16px;
+  }
+
+  .pagina-cadastro > .container {
+      padding: 20px;
+  }
+}

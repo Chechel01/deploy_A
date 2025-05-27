@@ -1,0 +1,76 @@
+/* src/App.css */
+
+html {
+  box-sizing: border-box;
+  height: 100%; /* Garantir que o HTML ocupe toda a tela */
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5; /* Melhorando o espaçamento entre as linhas */
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Permitir que os itens filhos se alinhem verticalmente */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Suavizar a transição ao passar o mouse */
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Alterar a cor do link ao passar o mouse */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.oculto {
+  display: none;
+}
+
+/* Foco nos elementos interativos */
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid #004080; /* Azul Bahia para o foco */
+  outline-offset: 2px;
+}
+
+/* Estilo para o corpo da aplicação */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Melhorando o visual da página e tornando-a responsiva */
+@media (max-width: 768px) {
+  body {
+      padding: 10px;
+  }
+
+  .container {
+      padding: 10px;
+  }
+}

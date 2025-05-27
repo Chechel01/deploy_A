@@ -1,0 +1,58 @@
+/* src\components\MensagemFeedback\styles.css */
+
+.mensagem {
+  position: fixed;
+  top: 16px; 
+  right: -300px; /* Começa fora da tela à direita */
+  padding: 15px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  max-width: 300px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;  /* Alinhamento dos ícones e texto */
+  gap: 10px;
+}
+
+.mensagem.sucesso {
+  background-color: #004080; /* Azul Bahia */
+}
+
+.mensagem.erro {
+  background-color: #E30613 !important; /* Vermelho Bahia */
+}
+
+.mensagem.visivel {
+  right: 16px; /* Mensagem desliza para a posição visível */
+  opacity: 1; /* Torna a mensagem visível */
+}
+
+/* Ícones */
+.mensagem .icone {
+  font-size: 18px;  /* Tamanho do ícone */
+}
+
+/* Estilo do ícone de sucesso */
+.mensagem.sucesso .icone {
+  color: #FFFFFF;
+  content: '\2714'; /* Símbolo de check */
+}
+
+/* Estilo do ícone de erro */
+.mensagem.erro .icone {
+  color: #FFFFFF;
+  content: '\2716'; /* Símbolo de erro */
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .mensagem {
+    max-width: 90%; /* Aumenta o espaço no celular */
+    right: 10px; /* Um pouco mais afastado das bordas */
+  }
+}
